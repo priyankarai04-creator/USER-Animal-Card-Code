@@ -1,0 +1,125 @@
+  * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        main {
+            width: 100dvw;
+            height: calc(100dvh - 40px);
+            display: grid;
+            grid-template-columns: 70% 30%;
+            border-top: 1px solid;
+        }
+
+        section {
+            width: 100%;
+            height: 100%;
+        }
+
+        .textCenterAlign {
+            text-align: center;
+        }
+
+        .imageCard,
+        .miniImageCard {
+            width: 320px;
+            height: 400px;
+            margin: 40px auto;
+            border-radius: 5px;
+            box-shadow: 1px 1px 5px 5px rgb(49, 210, 247);
+            position: relative;
+        }
+
+        .miniImageCard {
+            width: 250px;
+            height: 300px;
+            position: none;
+        }
+
+        .imageCard>img,
+        .miniImageCard>img {
+            width: 100%;
+            height: 350px;
+            border-radius: 5px;
+        }
+
+        .miniImageCard>img {
+            height: 250px;
+        }
+
+
+        .description {
+            font-size: 18px;
+            width: 100%;
+            line-height: 50px;
+            font-weight: 600;
+            text-align: center;
+            text-transform: capitalize;
+        }
+
+        .loader {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            display: none;
+            justify-content: center;
+            align-items: center;
+            background: rgb(49, 210, 247);
+            color: rgb(1, 56, 74);
+            font-size: 20px;
+        }
+
+        .active {
+            display: flex;
+        }
+
+        .controls {
+            margin: 20px auto;
+            width: fit-content;
+        }
+
+        button {
+            border-radius: 5px;
+            border: 1px solid;
+            cursor: pointer;
+            width: 120px;
+            height: 40px;
+            text-transform: capitalize;
+            transition: all 0.4s ease-in-out;
+        }
+
+        button:hover {
+            background: black;
+            color: white;
+        }
+
+        button:nth-child(1) {
+            margin-right: 20px;
+        }
+
+
+        .rightSideArea {
+            width: 100%;
+            padding: 5px;
+            border-left: 1px solid;
+        }
+
+        .addImageForm {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            padding: 10px 5px;
+        }
+
+        input {
+            width: 250px;
+            line-height: 24px;
+            padding: 0 5px;
+        }
+
+        .previewArea {
+            height: 400px;
+        }
